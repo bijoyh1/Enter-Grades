@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^/?Some-text-goes-here/([0-9]+)$ /send.php?id=$1
+RewriteRule https://bijoyh101.azurewebsites.net/(./)$/(./)$ https://bijoyh101.azurewebsites.net/send.php?id=$1&grades=$2
