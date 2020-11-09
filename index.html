@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
 <head>
 </head>
@@ -27,7 +28,7 @@ $("#sendData").click(function(){
   //       xmlhttp.open("GET", "send.php/" + id + "/" + grade, true);
   //       xmlhttp.send();
     //}
-		url: 'send.php/' + id + "/" + grade,
+		url: 'send/' + id + "/" + grade,
 		success: function(data,status)
 		{
 			if (status == "success")
