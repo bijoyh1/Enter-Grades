@@ -1,3 +1,3 @@
 RewriteEngine on
 
-RewriteRule ^([^/]*)/([^/]*)\$ /send.php?id=$1&grades=$2 [L]
+RewriteRule ^[A-Za-z-/]send/([A-Za-z0-9-_\.()\*]+)/([A-Za-z0-9-_\.()\*]+)/?$ send.php?id=$1&grades=$2 [NC,L]
