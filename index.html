@@ -12,14 +12,13 @@
 <button id="getData">Get Data</button>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
-$("#getData").click(function(){
+$("#sendData").click(function(){
 
 	var id = $("#id").val();
 	var grade = $("#grades").val();
 	
 	$.ajax({
-		url: 'send.php',
-		data: {id,grade},
+		url: 'send.php/' + id + "/" + grade,
 		success: function(data,status)
 		{
 			if (status == "success")
