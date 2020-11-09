@@ -19,7 +19,9 @@ $("#sendData").click(function(){
 	var grade = $("#grades").val();
 	
 	$.ajax({
-		url: 'send/' + id + "/" + grade,
+		url: 'send.php',
+		type: 'get',
+		data: {'id':id, 'grades' : grades},
 		success: function(data,status)
 		{
 			if (status == "success")
