@@ -1,3 +1,3 @@
+<IfModule mod_rewrite.c>
 RewriteEngine on
-
 RewriteRule ^[A-Za-z-/]send/([A-Za-z0-9-_\.()\*]+)/([A-Za-z0-9-_\.()\*]+)/?$ send.php?id=$1&grades=$2 [NC,L]
