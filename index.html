@@ -16,7 +16,7 @@
 		var id = $("#id").val();
 		var grade = $("#grades").val();
 		$.ajax({
-			url: '/API/send.php',
+			url: 'send.php',
 			type 'GET',
 			data: {'id': id, 'grades' : grade},
 			success: function(data,status)
