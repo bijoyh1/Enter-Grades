@@ -19,7 +19,7 @@ $("#getData").click(function(){
 	
 	$.ajax({
 		url: 'send.php',
-		type: 'post',
+		type: 'get',
 		data: {'id': id, 'grades' : grade},
 		success: function(data,status)
 		{
