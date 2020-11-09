@@ -18,30 +18,30 @@ $("#sendData").click(function(){
 	var grade = $("#grades").val();
 	
 	$.ajax({
-		var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("txtHint").innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET", "send.php/" + id + "/" + grade, true);
-        xmlhttp.send();
-    }
-		// url: 'send.php/' + id + "/" + grade,
-		// success: function(data,status)
-		// {
-		// 	if (status == "success")
-		// 	{
-		// 		alert("Grade Submitted");
-		// 		$("#studentID").val("")
-		// 		$("#grade").val("")
-		// 	}
-		// },
-		// error: function(xhr, desc, err)
-		// {
-		// 	console.log(xhr);
-		// 	console.log("Details: " + desc + "\nError:" + err);
-		// }
+		// var xmlhttp = new XMLHttpRequest();
+  //       xmlhttp.onreadystatechange = function() {
+  //           if (this.readyState == 4 && this.status == 200) {
+  //               document.getElementById("txtHint").innerHTML = this.responseText;
+  //           }
+  //       };
+  //       xmlhttp.open("GET", "send.php/" + id + "/" + grade, true);
+  //       xmlhttp.send();
+    //}
+		url: 'send.php/' + id + "/" + grade,
+		success: function(data,status)
+		{
+			if (status == "success")
+			{
+				alert("Grade Submitted");
+				$("#studentID").val("")
+				$("#grade").val("")
+			}
+		},
+		error: function(xhr, desc, err)
+		{
+			console.log(xhr);
+			console.log("Details: " + desc + "\nError:" + err);
+		}
 	});
 });
 </script>
