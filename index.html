@@ -12,13 +12,13 @@
 <button id="getData">Get Data</button>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
-	$("#getData").click(function()){
+	$("#getData").click(function(){
 		var id = $("#id").val*();
 		var grade = $("#grades").val();
 		$.ajax({
 			url: id + "/" + grade
-		})
-	}
+		});
+	});
 </script>
 </body>
 </html>
