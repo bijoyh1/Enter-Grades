@@ -10,8 +10,8 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 
-$id = $_GET["id"];
-$grades = $_GET["grades"];
+$id = $_POST["id"];
+$grades = $_POST["grades"];
 
 $sql = $conn->prepare ("INSERT INTO dbo.Grades_Table (id,grades) VALUES ($id,$grades)");
 $sql->execute();
