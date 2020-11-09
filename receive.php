@@ -10,7 +10,7 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 //sql = $conn->prepare ("SELECT id, grades FROM dbo.Grades_Table");
-$result = $conn->query("SELECT id, grades FROM dbo.Grades_Table");
+$result = $conn->query("SELECT id, grades FROM dbo.table1");
 
 ?>
 <table>

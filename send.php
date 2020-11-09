@@ -13,7 +13,7 @@ catch (PDOException $e) {
 $id = $_GET["id"];
 $grades = $_GET["grades"];
 
-$sql = $conn->prepare ("INSERT INTO dbo.Grades_Table (id,grades) VALUES ($id,$grades)");
+$sql = $conn->prepare ("INSERT INTO dbo.table1 (id,grades) VALUES ($id,$grades)");
 $sql->execute();
  echo "New record added successfully";
 ?>
