@@ -20,14 +20,14 @@
 <script>
 $("#getData").click(function(){
 	$.ajax({
-		url:receive.php,
+		url: 'receive.php',
 		success: function(data, status)
 		{
 			if(status =="success")
 			{
 				$("gradeArea").html(data)
 			}
-		}
+		},
 		error: function(xhr, desc, err)
 		{
 			console.log(xhr);
