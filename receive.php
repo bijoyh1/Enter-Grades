@@ -9,8 +9,7 @@ catch (PDOException $e) {
     print("Error connecting to SQL Server.");
     die(print_r($e));
 }
-//sql = $conn->prepare ("SELECT id, grades FROM dbo.Grades_Table");
-$result = $conn->query("SELECT id, grades FROM dbo.table1");
+$result = $conn->query("SELECT id, grade FROM dbo.table1");
 
 ?>
 <table>
